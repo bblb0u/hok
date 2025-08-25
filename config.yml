@@ -1,0 +1,118 @@
+baseURL: https://hok.canghai.org/
+title: 晚秋的小本本📖
+
+enableInlineShortcodes: true
+enableEmoji: true
+enableRobotsTXT: true
+hasCJKLanguage: true
+
+googleAnalytics: G-MM9N872C9H
+
+pagination:
+  pagerSize: 50
+
+defaultContentLanguage: zh
+
+languages:
+    zh:
+        languageName: "简体中文"
+        menu:
+            main:
+                - identifier: home
+                  name: 主页
+                  url: /
+                  weight: 10
+                - identifier: tags
+                  name: 标签
+                  url: tags
+                  weight: 20
+                - identifier: archives
+                  name: 归档
+                  url: archives
+                  weight: 30
+                - identifier: search
+                  name: 搜索
+                  url: search
+                  weight: 40
+                - identifier: about
+                  name: 关于
+                  url: about
+                  weight: 50
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production
+    description: "blog"
+    defaultTheme: auto
+    disableThemeToggle: false
+    DateFormat: "2006-01-02"
+    ShowReadingTime: true
+    disableSpecialistPost: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    hideFooter: false
+    ShowWordCount: true
+    VisitCount: true
+    ShowLastMod: true
+    ShowToc: true
+    TocOpen: true
+    comments: true
+    math: true
+    homeInfoParams:
+        Title: "游戏日记"
+        Content:
+            国服大怨种的游戏日记，随缘更新
+    socialIcons:
+        - name: bilibili
+          url: "https://www.bilibili.com/"
+
+    label:
+        text: "晚秋的小本本📖"
+
+    assets:
+        favicon: "https://cdn.canghai.org/images/icon_hok.svg"
+        favicon16x16: "https://cdn.canghai.org/images/icon_hok.svg"
+        favicon32x32: "https://cdn.canghai.org/images/icon_hok.svg"
+        apple_touch_icon: "https://cdn.canghai.org/images/icon_hok.svg"
+        safari_pinned_tab: "https://cdn.canghai.org/images/icon_hok.svg"
+
+    cover:
+        hidden: false
+        hiddenInList: false
+        hiddenInSingle: false
+
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: [ "title", "permalink", "summary" ]
+
+    StartYear: 2022
+    StartDate: 11/11/2022 00:00:00
+
+    twikoo:
+        version: 1.6.41
+        id: https://twikoo.canghai.org/
+
+taxonomies:
+    category: categories
+    tag: tags
+    series: series
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        codeFences: true
+        guessSyntax: true
+        lineNos: false
+        style: monokai
