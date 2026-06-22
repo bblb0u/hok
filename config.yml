@@ -99,7 +99,7 @@ params:
     StartDate: 11/11/2022 00:00:00
 
     twikoo:
-        version: 1.6.41
+        version: 1.7.13
         id: https://twikoo.canghai.org/
 
 taxonomies:
